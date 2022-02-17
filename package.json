@@ -4,6 +4,7 @@
 	"description": "A template for webpack applications.",
 	"main": "./src/index.js",
 	"scripts": {
+		"start": "webpack watch",
 		"test": "echo \"No testing is available for this repository.\" && exit 0"
 	},
 	"repository": {
