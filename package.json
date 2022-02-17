@@ -1,0 +1,35 @@
+{
+	"name": "webpack-tmpl",
+	"version": "0.0.0-alpha.0",
+	"description": "A template for webpack applications.",
+	"main": "./src/index.js",
+	"scripts": {
+		"test": "echo \"No testing is available for this repository.\" && exit 0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kerig-it/webpack-tmpl.git"
+	},
+	"keywords": [
+		"template",
+		"client",
+		"webpack"
+	],
+	"author": "kerig",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/kerig-it/webpack-tmpl/issues"
+	},
+	"homepage": "https://github.com/kerig-it/webpack-tmpl#readme",
+	"dependencies": {
+		"css-loader": "^6.6.0",
+		"fs": "^0.0.1-security",
+		"html-webpack-plugin": "^5.5.0",
+		"path": "^0.12.7",
+		"raw-loader": "^4.0.2",
+		"sass": "^1.49.7",
+		"sass-loader": "^12.6.0",
+		"style-loader": "^3.3.1",
+		"webpack-cli": "^4.9.2"
+	}
+}
