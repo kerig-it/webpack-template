@@ -1,22 +1,42 @@
 // Webpack configuration file.
 
-// Node modules
+// Modules
 const
 	fs = require('fs'),
 	HtmlWebpackPlugin = require('html-webpack-plugin'),
 	path = require('path');
 
-// Configuration variable
-let config;
+let config; // Configuration object --> ./config.json
 
 try {
 	config = JSON.parse(fs.readFileSync(
-		'config.json'
+		path.join(__dirname, 'config.json')
 	).toString());
 }
 catch (error) {
 	throw error;
 }
+
+// Add your plugins in the below array, not in the actual export
+// object.
+let plugins = [
+	// Default page
+	new HtmlWebpackPlugin({
+		filename: 'index.html',
+		meta: { viewport: 'width=device-width, initial-scale=1.0' },
+		template: './src/default.html',
+		title: config.name
+	})
+];
+
+fs.readdirSync(path.join(__dirname, 'src', 'pages')).forEach(file => {
+	if (file.match(/\.x?html?/i)) {
+		plugins.push(new HtmlWebpackPlugin({
+			filename: `pages/${file}`,
+			template: `./src/pages/${file}`
+		}));
+	}
+});
 
 module.exports = {
 	entry: './src/index.js',
@@ -50,22 +70,5 @@ module.exports = {
 		hashFunction: 'xxhash64',
 		path: path.resolve(__dirname, 'dist')
 	},
-	plugins: [
-
-		// Default
-		new HtmlWebpackPlugin({
-			filename: 'index.html',
-			meta: {
-				viewport: 'width=device-width, initial-scale=1.0'
-			},
-			template: './src/default.html',
-			title: config.name
-		}),
-
-		// Home
-		new HtmlWebpackPlugin({
-			filename: 'pages/home.html',
-			template: './src/pages/index.tmpl.html'
-		})
-	]
+	plugins: plugins
 };
