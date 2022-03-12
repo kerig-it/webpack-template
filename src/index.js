@@ -1,11 +1,16 @@
-// Entry point for this webpack application.
-//
-// See the README for more information.
-//
-// GitHub: https://github.com/kerig-it/webpack-tmpl
+/*
+ * webpack-tmpl—A template repository for webpack applications.
+ *
+ * Refer to the README in this repository's root for more
+ * information.
+ *
+ * GitHub: https://github.com/kerig-it/webpack-tmpl
+ *
+ * Made with ❤️ by Kerig.
+*/
 
-// Import of assets/resources
-import '../config.json'
+// Assets/resources
+import config from '../config.json';
 
 // Loads a page
 const goto = async pathname => {
@@ -15,13 +20,10 @@ const goto = async pathname => {
 		`/pages/${pathname === '/' ? 'home' : pathname.replace(/^\/*/, '')}.html`,
 		{ method: 'GET' }
 	)
-	.then(response => {
-		// Return response parsed as text.
-		return response.text();
-	})
+	.then(response => response.text())
 	.then(data => {
 
-		// Display fetched data.
+		// Display the fetched data.
 		document.body.innerHTML = data;
 
 		// Update the history object.
@@ -37,8 +39,8 @@ const goto = async pathname => {
 	});
 };
 
-// Main IIFE
-(() => {
+// Main function
+const main = () => {
 	'use strict';
 	
 	goto(window.location.pathname);
@@ -48,4 +50,4 @@ const goto = async pathname => {
 			document.body.innerHTML = event.state.html;
 		}
 	};
-})();
+};
