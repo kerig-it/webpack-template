@@ -1,7 +1,7 @@
 {
 	"name": "webpack-tmpl",
 	"version": "0.0.0-alpha.0",
-	"description": "A template for webpack applications.",
+	"description": "A template repository for webpack applications.",
 	"main": "./src/index.js",
 	"scripts": {
 		"start": "webpack watch",
