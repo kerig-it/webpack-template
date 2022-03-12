@@ -51,3 +51,11 @@ const main = () => {
 		}
 	};
 };
+
+try /*one's luck*/ {
+	main();
+}
+catch (error) {
+	// Throw errors.
+	throw error;
+}
