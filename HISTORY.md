@@ -2,8 +2,8 @@
 
 Notable changes to this project will be documented in this file.
 
-## Unreleased
+## v0.0.0-alpha.0, 2022-05-01, [@msfninja](https://github.com/msfninja)
 
 ### Notes
 
-Initial pre-release of `webpack-tmpl`.
+Initial pre-release of `webpack-template`.
