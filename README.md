@@ -3,7 +3,7 @@
 </h6>
 
 <h1 align="center">
-	<span>webpack-tmpl</span><br />
+	<span>webpack-template</span><br />
 	<!-- Workflow files/badges -->
 	<a href="">
 		<img alt="" src="" />
@@ -11,11 +11,11 @@
 </h1>
 
 > :point_up: **Notice**<br />
-> This is a template repository.
+> You can use this boilerplate by clicking the "Use this template" button on [our GitHub repository](https://github.com/kerig-it/webpack-template).
 
 ## Synopsis
 
-`webpack-tmpl`&#8212;A template repository for webpack applications.
+This repository is a Webpack application boilerplate with numerous features such as Markdown rendering, surfing without page reloads and automatic page component management (not to be confused with React components) controlled from either Markdown YAML metadata or HTML attributes as JSON.
 
 <table/>
 	<tr>
@@ -34,11 +34,12 @@
 
 ## Support
 
-Ran into problems or have questions? Don't hesitate to get in touch with us by either sending an e-mail to one of this repository contributors, [filing an issue](https://github.com/kerig-it/webpack-tmpl/issues/new/choose) on our GitHub repository or [opening a discussion](https://github.com/kerig-it/webpack-tmpl/discussions/new).
+Ran into problems or have questions? Don't hesitate to get in touch with us by either sending an e-mail to one of this repository contributors, [filing an issue](https://github.com/kerig-it/webpack-template/issues/new/choose) on our GitHub repository or [opening a discussion](https://github.com/kerig-it/webpack-template/discussions/new).
 
 If you want to send an e-mail, you can choose from one of the below e-mail addresses:
 
- - <msfninja@pm.me> ([@msfninja](https://github.com/msfninja))
+ - <msfninja@proton.me> ([@msfninja](https://github.com/msfninja), contributor)
+ - <sosa@ctemplar.com> ([@milkoholic](https://github.com/milkoholic), member)
 
 > :bulb: **Tip**<br />
-> You can also join our `#kerig` channel on [irc.libera.chat](https://libera.chat) or [chat.freenode.net](https://freenode.net)!
+> You can also join our `#kerig` channel on [irc.libera.chat](https://libera.chat) or [irc.freenode.net](https://freenode.net)!
