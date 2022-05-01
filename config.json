@@ -1,3 +1,32 @@
 {
-	"name": "webpack-tmpl"
+	"components": {
+		"header": {
+			"button": [
+				{
+					"name": "Home",
+					"href": "/"
+				},
+				{
+					"name": "1",
+					"href": "/1"
+				},
+				{
+					"name": "2",
+					"href": "/2"
+				},
+				{
+					"name": "3",
+					"href": "/3"
+				}
+			]
+		}
+	},
+	"icon": "./src/assets/icon/192.png",
+	"meta": {
+		"author": "Kerig",
+		"description": "This repository is a Webpack application boilerplate with numerous features such as Markdown rendering, surfing without page reloads and automatic page component management (not to be confused with React components) controlled from either Markdown YAML metadata or HTML attributes as JSON.",
+		"keywords": "template,client,webpack,boilerplate",
+		"viewport": "width=device-width, initial-scale=1.0"
+	},
+	"name": "webpack-template"
 }
