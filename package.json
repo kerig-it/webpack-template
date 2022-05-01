@@ -1,7 +1,7 @@
 {
-	"name": "webpack-tmpl",
+	"name": "webpack-template",
 	"version": "0.0.0-alpha.0",
-	"description": "A template repository for webpack applications.",
+	"description": "A Webpack application boilerplate.",
 	"main": "./src/index.js",
 	"scripts": {
 		"start": "webpack watch",
@@ -9,27 +9,33 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/kerig-it/webpack-tmpl.git"
+		"url": "git+https://github.com/kerig-it/webpack-template.git"
 	},
 	"keywords": [
 		"template",
 		"client",
-		"webpack"
+		"webpack",
+		"boilerplate"
 	],
 	"author": "kerig",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/kerig-it/webpack-tmpl/issues"
+		"url": "https://github.com/kerig-it/webpack-template/issues"
 	},
-	"homepage": "https://github.com/kerig-it/webpack-tmpl#readme",
+	"homepage": "https://github.com/kerig-it/webpack-template#readme",
 	"dependencies": {
 		"css-loader": "^6.6.0",
 		"fs": "^0.0.1-security",
+		"fynston": "file:../fynston",
 		"html-webpack-plugin": "^5.5.0",
-		"path": "^0.12.7",
+		"i": "^0.3.7",
+		"markdown-yaml-metadata-parser": "^3.0.0",
+		"npm": "^8.8.0",
+		"pjax": "^0.2.8",
 		"raw-loader": "^4.0.2",
 		"sass": "^1.49.7",
 		"sass-loader": "^12.6.0",
+		"showdown": "^2.1.0",
 		"style-loader": "^3.3.1",
 		"webpack-cli": "^4.9.2"
 	}
